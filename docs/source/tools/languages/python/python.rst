@@ -214,6 +214,8 @@ django
 cloudmesh client library
 ------------------------------
 
+
+
 Console
 ^^^^^^^
 
@@ -311,7 +313,55 @@ If all goes well the package will be installed.
 github
 ----------------------------------------------------------------------
 
-todo
+To submit to the github follow these steps
+Go to github via a browser and log in
+Go to the github directory you wish to submit to
+Create a fork of that directory
+
+Within the terminal do the following::
+
+	sudo apt-get install git
+
+	mkdir github
+	cd github
+
+Setting the ssh key by which you will communicate with the repository::
+
+	ssh-keygen -C myname@example.com
+	ls ~/.ssh
+	cat ~/.ssh/id_rsa.pub
+
+Upload to git::
+
+	git clone git@github.com:yourgithubusername/tools.git
+	cd tools
+
+	git pull
+	sudo pip install -r requirements.txt
+	make doc
+	make view
+
+Using PyCharm you should be able to open and edit the project you have downloaded
+Next you need to commit and push the changes you have made to the forked repository on your account
+
+This can be done by doing the following::
+
+	Right click the tab for the document you are currently editing
+	Hover over git until the side menu pops up
+	Click on "Commit File" on the side menu::
+
+		select the files you want to to commit in this new window
+		add a message in the proper format
+
+	Right click the tab for the document you are currently editing
+	Hover over git until the side menu pops up
+	Hover over repository until the side menu pops up
+	Click on "Push" on the side menu
+
+Go back to your browser and go to your account
+Go to your repositories and click the one you just pushed to
+Click "New pull request"
+Fill in the required information for the pull request then create it
 
 Excersises
 ==================
