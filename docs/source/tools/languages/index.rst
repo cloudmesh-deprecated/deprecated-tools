@@ -8,5 +8,5 @@ Languages
 
    python/index
    java/index
-
+   ruby
 

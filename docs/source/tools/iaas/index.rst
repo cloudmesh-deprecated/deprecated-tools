@@ -1,8 +1,11 @@
-Languages
+IaaS
 ==============
 
 .. toctree::
    :maxdepth: 2
    :numbered:
    
-   language/java/maven.rst
+   aws
+   azure
+   openstack
+   vagrant

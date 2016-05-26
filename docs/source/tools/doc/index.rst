@@ -13,4 +13,4 @@ Documentation
    rst
    sphinx
    mendeley
-  
+   slides  
